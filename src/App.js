@@ -18,7 +18,7 @@ function App() {
     <Router>
       <Nav />
       <Switch>
-        <Route exact path="/" component={HomePage} />
+        <Route exact path="/food-blog" component={HomePage} />
         <Route
           path="/recipe/:id"
           render={(props) => <RecipeDetails {...props} featuredRecipes={featuredRecipes} />}

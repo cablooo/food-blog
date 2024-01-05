@@ -1,4 +1,6 @@
 import React, {useRef} from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 function Nav() {
 
@@ -29,16 +31,16 @@ function Nav() {
   return (
     <nav>
         <div className="container">
-            <h1 className="title"><a href="/">FlavorFiesta </a></h1>
+            <h1 className="title"><Link to="/food-blog">FlavorFiesta </Link></h1>
             <ul ref={navUl}>
                 <li>
-                <a ref={pushNavLinks} href="/">Home</a>
+                <Link ref={pushNavLinks} to="/food-blog">Home</Link>
                 </li>
                 <li>
-                <a ref={pushNavLinks} href="/search">Search</a>
+                <Link ref={pushNavLinks} to="/search">Search</Link>
                 </li>
                 <li>
-                <a ref={pushNavLinks} href="/contact">Contact</a>
+                <Link ref={pushNavLinks} to="/contact">Contact</Link>
                 </li>
             </ul>
             <div ref={burger} onClick={navToggleHandler} className="burger">

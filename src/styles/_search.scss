@@ -18,7 +18,7 @@
     .search-items {
         margin: 40px 0;
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         gap: 2rem;
 
         .search-item {
@@ -29,5 +29,17 @@
                 width: 100%;
             }
         }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .search-items {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .search-items {
+        grid-template-columns: 1fr !important;
     }
 }

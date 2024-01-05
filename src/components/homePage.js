@@ -5,6 +5,7 @@ import 'slick-carousel/slick/slick-theme.css';
 import HomeGrid from "./homeGrid";
 import { Link } from 'react-router-dom';
 import featuredRecipes from "../data";
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 const HomePage = () => {
 
