@@ -11,7 +11,7 @@ import featuredRecipes from './data'; // Import your recipe data
 import Footer from "./components/Footer";
 
 // Importing styles
-import './styles/app.scss'
+import './styles/app.scss';
 
 function App() {
   return (
