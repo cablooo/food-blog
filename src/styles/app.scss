@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+ul {
+    list-style: none;
+}
+
+.overlay {
+    background: rgba(0, 0, 0, .5);
+    height: 100%;
+    width: 100%;
+}
+
+.visible {
+  opacity: 1;
+  transform: translateX(0); /* Move to original position */
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* For webkit-based browsers (Chrome, Safari) */
+/* Width and height of the scrollbar */
+::-webkit-scrollbar {
+    width: 10px; /* Adjust scrollbar width */
+    height: 10px; /* Adjust scrollbar height */
+  }
+  
+  /* Track (background) of the scrollbar */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Change track color */
+  }
+  
+  /* Handle (thumb) of the scrollbar */
+  ::-webkit-scrollbar-thumb {
+    background: #888; /* Change thumb color */
+    border-radius: 5px; /* Adjust border radius */
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Change thumb color on hover */
+  }
+
+@import './nav';
+@import './home';
+@import './footer';
+@import './search';
+@import './contact';

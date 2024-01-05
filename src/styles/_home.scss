@@ -1,0 +1,201 @@
+.home {
+    min-height: 100vh;
+    // margin-top: 10vh;
+
+    .container {
+
+        .slick-dots {
+            margin-top: 10px;
+            position: static;
+        }
+
+        .slider-title-h1 {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        * {
+            outline: none;
+        }
+
+        .slider-div {
+            height: 100%;
+            /* Styles for previous arrow */
+                .slick-prev {
+                position: absolute;
+                z-index: 10;
+                top: 40%;
+                left: 20px; /* Adjust as needed */
+                transform: translateY(-50%);
+                cursor: pointer;
+                color: #fff;
+                width: 40px;
+                height: 40px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                }
+
+                /* Styles for next arrow */
+                .slick-next {
+                position: absolute;
+                z-index: 10;
+                top: 40%;
+                right: 20px; /* Adjust as needed */
+                transform: translateY(-50%);
+                cursor: pointer;
+                color: #fff;
+                width: 40px;
+                height: 40px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                }
+
+            img {
+                width: 100%;
+            }
+        }
+        
+    }
+}
+
+
+.welcome-box {
+    min-height: 60vh;
+    background: url('https://images.unsplash.com/photo-1490645935967-10de6ba17061?q=80&w=2053&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') center/cover;
+    background-attachment: fixed;
+    color: #fff;
+    margin-bottom: 3rem;
+
+    .overlay {
+        padding-top: 3em;
+        height: 60vh !important;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        h1 {
+            margin-bottom: 7px;
+            letter-spacing: 2px;
+        }
+
+        p {
+            width: 40%;
+        }
+    }
+}
+
+
+// HOME GRID =>>>>
+.home-grid {
+
+      .grid-box {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        align-items: center;
+        justify-items: center;
+        flex-direction: column-reverse;
+        min-height: 100px;
+        margin: 70px 0;
+        gap: 20px;
+        // transform: translateX(200px);
+        // opacity: 0;
+        // transition: 250ms;
+
+        img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .text-box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+        }
+      }
+
+    //   .grid-box:nth-child(odd) {
+
+    //   }
+      
+      /* Positioning for even-numbered cards */
+      .grid-box:nth-child(even) {
+        // transform: translateX(-200px) !important;
+        a {
+            grid-column: 2;
+            grid-row: 1;
+          }
+      }
+}
+
+
+@media screen and (max-width: 620px) {
+    .grid-box {
+        grid-template-columns: 1fr !important;
+        grid-template-rows: repeat(2, 1fr);
+        text-align: center;
+
+        a {
+            grid-column: 1 !important;
+            grid-row: 1 !important;
+          }
+    
+          .text-box {
+            grid-column: 1 !important;
+            grid-row: 2 !important;
+            margin-top: 15px;
+          }
+    }
+}
+
+
+// RECIPE DETAILS
+
+.recipe-detail {
+    min-height: 60vh;
+    padding: 8vh 0 0 0;
+
+    .container {
+        height: 60vh;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    img {
+        width: 100%;
+        align-self: center;
+    }
+
+    .recipe-text-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .recipe-detail {
+        text-align: center;
+
+        .container {
+            grid-template-columns: 1fr !important;
+            grid-template-rows: repeat(2, 1fr);
+        }
+    }
+}
+
+.Recipe-not-found {
+    min-height: 70vh;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,50%);
+    text-align: center;
+}

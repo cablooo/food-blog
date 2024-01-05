@@ -1,0 +1,33 @@
+.search {
+    min-height: 80vh;
+    padding-top: 15vh;
+
+    input {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,50%);
+        outline: none;
+        border: none;
+        border-radius: 10px;
+        background: #ffffff;
+        box-shadow: 2px 2px 10px #333;
+        padding: .5rem 2rem;
+    }
+
+    .search-items {
+        margin: 40px 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+
+        .search-item {
+            display: flex;
+            flex-direction: column-reverse;
+            
+            img {
+                width: 100%;
+            }
+        }
+    }
+}

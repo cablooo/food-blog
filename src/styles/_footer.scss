@@ -1,0 +1,23 @@
+footer {
+    background: #333;
+    color: #f1f1f1;
+    min-height: 15vh;
+    position: relative;
+    left: 0;
+    bottom: 0;
+
+    .container {
+        min-height: 15vh;
+        text-align: center;
+        padding: 15px;
+
+        * {
+            padding: 10px 0;
+        }
+
+        p {
+            width: 70%;
+            margin: auto;
+        }
+    }
+}
